@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+a{
+    color: inherit;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/img/bkg-Formula-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+nav{
+    
+    height: 12%;
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+}
+.intens-menu{
+    
+    font-weight: 400;
+    font-size: 18px;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 0%;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    /* background-color: red; */
+    
+}
+.parte-esquerda-nav{
+    display: flex;
+    height: 12%;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    
+    gap: 30px;
+    
+}
+.parte-esquerda-nav img{
+    padding-right: 50px;
+}
+.intens-menu a{
+    color: white;
+}
+.parte-direita-nav{
+    /* background-color: red; */
+    display: flex;
+
+    gap: 25px;
+    color: white;
+    padding-right: 3%;
+
+    
+}
+.parte-direita-nav i{
+    font-size: 24px;
+}
+.parte-direita-nav img{
+    /* background-color: red; */
+    margin-top: -2%;
+}
+.conteiner{
+    width: 600px;
+    /* background-color: red; */
+    margin-left: 5%;
+    margin-top: 6%;
+}
+.conteiner p{
+    font-style: normal;
+font-weight: 600;
+font-size: 18px;
+width: 550px;
+
+
+color: #FFFFFF;
+}
+.conteiner img{
+    width: 480px;
+}
+.btns-assistir{
+    display: flex;
+    
+}
+
+.play{
+font-size: 24px;
+border-radius: 10px;
+background-color: #FFFFFF;
+width: 127px;
+height: 57px;
+transition: 500ms;
+}
+.play p {
+    color: black;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+/* line-height: 29px; */
+width: inherit;
+height: inherit;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #000000;
+margin-left: 5px;
+
+}
+.btns-assistir{
+    margin-top: 10%;
+    gap: 25px;
+}
+.moreInfo{
+    width: 164px;
+height: 57px;
+background: #4D4D4D;
+border-radius: 6px;
+transition: 500ms;
+
+}
+
+.moreInfo p {
+    color: black;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+/* line-height: 29px; */
+width: inherit;
+height: inherit;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #FFF;
+
+
+}
+.fa-play{
+    padding-right: 10px;
+}
+.fa-info{
+    width: 30pX;
+    height: 30px;
+    border: solid 3px #FFF;
+    /* background-color: red; */
+    font-size: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3px;
+    
+    margin-right: 5px;
+
+}
+.play:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.moreInfo:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.sugestoes{
+    margin-top: 20%;
+}
+.slider{
+    margin-top: 5%;
+    display: flex;
+    gap: 8px;
+    transition: 500ms;
+}
+.slider img{
+    height: 140px;
+    transition: 500ms;
+}
+.slider img:hover{
+    transform: translateY(-10%);
+    cursor: pointer;
+}
+.perfil{
+    /* background-color: red; */
+display: flex;
+gap: 15px;
+justify-content: center;
+}
+.slider.s7{
+    transform: translateX(-45%);
+}
+.slider.s1{
+    transform: translateX(-0%);
+}
+/* parte de Usuario */
+.nav-user{
+    height: 100vh;
+    width: 17%;
+    background-color: #1b1b1b;
+    position: absolute;
+    right: 0;
+    top: -100%;
+    z-index: 3;
+    transition: 500ms;
+}
+.nav-user.ativo{
+    top: 0%;
+    
+
+}
+.fa-xmark{
+    margin-top: 10%;
+    margin-left: 8%;
+    font-size: 35px;
+    color: white;
+}
+.conteiner-nav-user{
+    display: flex;
+    /* background-color: red; */
+    font-size: 25px;
+    text-align: left;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+font-weight: 500;
+    color: white;
+    margin-left: 18%;
+    margin-top: 20%;
+    gap: 15px;
+}
+.conteiner-nav-user i{
+    padding-right:5% ;
+}
