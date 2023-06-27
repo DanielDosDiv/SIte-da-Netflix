@@ -1,16 +1,18 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    border: 0;
     box-sizing: border-box;
     font-family: "Netflix Sans", sans-serif;
-    
 }
-body{
+
+body {
     background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/530fc327-2ddb-4038-a3f0-2da2d9ccede1/81c68250-e0f1-4cd8-bf2d-4fd8222163de/BR-pt-20230619-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
 }
+
 /* Import */
 @font-face {
     font-family: 'Netflix Sans';
@@ -54,22 +56,24 @@ body{
     src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
 }
 
-.conteiner-login{
+.conteiner-login {
     width: 450px;
     height: 660px;
     background-color: #000000BF;
     border-radius: 7px;
 }
-.gmail{
+
+.gmail {
     margin-bottom: 5%;
 }
 
-.conteundo-login h1{
+.conteundo-login h1 {
     color: white;
     margin-bottom: 8%;
     font-size: 32px;
 }
-.prest{
+
+.prest {
     width: 341.01px;
     height: 50px;
     background-color: #333;
@@ -77,21 +81,20 @@ body{
     outline: none;
     border-radius: 5px;
     color: #8c8c8c;
-
     padding-left: 8%;
     font-weight: 500;
     font-size: 18px;
 }
-.conteundo-login{
-    
+
+.conteundo-login {
     width: 341.01px;
     position: absolute;
     /* top: 0; */
     left: 50%;
     transform: translate(-48% , 20%);
 }
-.alinhar{
 
+.alinhar {
     width: 100vw;
     height: 100vh;
     align-items: center;
@@ -99,16 +102,18 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+
 .logo img{
     margin-left: 2%;
     margin-top: 1%;
-    width: 16%;
-    
+    width: 150px;
 }
-a{
+
+a {
     color: inherit;
 }
-.btn-entrar{
+
+.btn-entrar {
     width: 341.01px;
     height: 47.98px;
     background-color: #E50914;
@@ -120,7 +125,8 @@ a{
     border-radius: 5px;
     margin-top: 10%;
 }
-.ajuda-LembreDemim{
+
+.ajuda-LembreDemim {
     margin-top: 3%;
     display: flex;
     width: inherit;
@@ -132,60 +138,110 @@ a{
     align-items: center;
     
 }
-.checkbox{
+
+.checkbox {
     width: 15px;
     height: 15px;
     border: none;
 }
-.assinar p{
+
+.assinar p {
     color: #737373;
 }
-.assinar a{
+
+.assinar a {
     color: white;
     text-decoration: none;
 }
-.assinar a:hover{
+
+.assinar a:hover {
     text-decoration: underline;
 }
-.assinar{
+
+.assinar {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 3%;
 }
-.text-final{
+.text-final {
     font-size: 13px;
     color: #8c8c8c;
 }
-.text-final a{
+
+.text-final a {
     color: #0071EB;
 }
-.rodaPe{
-    width:100% ;
+
+.rodaPe {
+    width:100%;
     height: 242.09px;
     background-color: #000000BF;
     margin-top: 15%;
-
 }
-.rodaPe-conteudo{
+
+.rodaPe-conteudo {
     color: #737373;
     margin: auto;
     width: 85%;
     /* background-color: red; */
-
     padding-top: 3%;
 }
-.rodaPe-conteudo h2{
+
+.rodaPe-conteudo h2 {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 5%;
 }
-.perguntasFrequantes{
+
+.perguntasFrequantes {
     display: flex;
     gap: 15px;
     font-weight: 300;
-
-
 }
+
 .perguntasFrequantes p {
     margin-bottom: 15%;
+}
+
+@media screen and (max-width:800px) {
+    
+    body {
+        width: 100%;
+        height: 100% !important;
+    }
+
+    .rodaPe {
+        margin-top: 0%;
+        text-align: center;
+    }
+    
+    .alinhar {
+        height: 100%;
+    }
+
+    .conteiner-login {
+        width: 100%;
+        height: 560px;
+        border-radius: 0;
+    }
+
+    .perguntasFrequantes {
+        flex-direction: column;
+        gap: 0px;
+        font-weight: 300;
+    }
+
+    .perguntasFrequantes p {
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        text-align: center;
+        background-color: #000000BF;
+    }
+
+    .logo img{
+        margin-left: 0%;
+        margin-top: 0%;
+    }
 }
