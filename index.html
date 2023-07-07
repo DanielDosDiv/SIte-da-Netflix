@@ -25,7 +25,7 @@
     <div class="conteiner-login">
         <div class="carrocel">
             <div class="conteundo-login cadastro">
-                <h1>Entrar</h1>
+                <h1>Cadastrar</h1>
                 <div class="gmail">
                     <input class="prest" type="email" name="email" id="email" placeholder="Email ou número de telefone">
                     <!-- <label for="email">Email ou número de telefone</label> -->
@@ -34,7 +34,7 @@
                     <input class="prest"  type="password" name="password" id="password" placeholder="Senha">
                     
                 </div>
-                <button class="btn-entrar">Entrar</button>
+                <button class="btn-entrar">Cadastrar</button>
                 <div class="ajuda-LembreDemim">
     
                     <div class="lembreDeMim">
@@ -58,7 +58,7 @@
                     <input class="prest"  type="password" name="password" id="password" placeholder="Senha">
                     
                 </div>
-                <button class="btn-entrar">Entrar</button>
+                <button onclick="VerificarDados()" class="btn-entrar">Entrar</button>
                 <div class="ajuda-LembreDemim">
     
                     <div class="lembreDeMim">
@@ -73,6 +73,18 @@
                 <p class="text-final">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais.</a></p>
             </div>
 
+        </div>
+    </div>
+</div>
+<!-- Alerta/Aviso -->
+<div class="alerta">
+    <div class="alinhar-aviso">
+        <div class="conteiner-aviso">
+            <h1>Cadastro Realizado<i class="fa-solid fa-circle-check"></i></h1>
+            <p>Usuario e Senha salvos, para Logar acesse com os mesmos dados inseridos</p>
+            <div class="btn-entendi">
+                <p>Ok, entendi<i class="fa-solid fa-check"></i></p>
+            </div>
         </div>
     </div>
 </div>
@@ -95,6 +107,7 @@
             </div>
         </div>
     </div>
+    <script src="js/login&cadastro.js"></script>
 </div>
 </body>
 </html>
