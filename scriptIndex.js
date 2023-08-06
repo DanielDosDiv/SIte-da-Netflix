@@ -1,3 +1,5 @@
+
+       
 let hidden = document.querySelector("body");
         hidden.classList.add("hiddendesativado")
         let img7 = document.querySelector(".img7");
@@ -37,21 +39,33 @@ let hidden = document.querySelector("body");
             trocarUsuario.classList.remove("ativado")
             trocarUsuario.classList.add("desativado")
         })
-        pRodrigo.addEventListener("click" , ()=>{
-            pRodrigo.classList.toggle("userSelecionado")
-            trocarUsuario.classList.remove("ativado")
-            trocarUsuario.classList.add("desativado")
-            console.log("Chegeui")
-        
-            hidden.classList.remove("hiddendesativado")
-        
+
+               // Nomes user
+       var rodrigo = document.getElementById("rodrigo")
+       var rodrigoConvert = rodrigo.innerHTML;
+       var Bolsonaro = document.getElementById("Bolsonaro")
+       var BolsonaroC = Bolsonaro.innerHTML;
+       var Stalin = document.getElementById("Stalin")
+       var james = document.getElementById("james")
+       // Element usser
+       var userName = document.getElementById("userName");
+       pRodrigo.addEventListener("click" , ()=>{
+           pRodrigo.classList.toggle("userSelecionado")
+           trocarUsuario.classList.remove("ativado")
+           trocarUsuario.classList.add("desativado")
+           console.log("Chegeui")
+           hidden.classList.remove("hiddendesativado")
+           userName.innerText = rodrigoConvert 
+
+            console.log(userName)
+           
         })
         pBolsonaro.addEventListener("click" , ()=>{
             pBolsonaro.classList.toggle("userSelecionado")
             trocarUsuario.classList.remove("ativado")
             trocarUsuario.classList.add("desativado")
-            
             hidden.classList.remove("hiddendesativado")
+            userName.innerHTML = BolsonaroC
         
         })
         pStalin.addEventListener("click" , ()=>{
@@ -80,3 +94,4 @@ let hidden = document.querySelector("body");
         
         })
         
+ 

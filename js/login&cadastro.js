@@ -16,6 +16,8 @@ btnEntrar.addEventListener("click" , ()=>{
     alerta.classList.add("ativado")
     conteinerAviso.classList.add("ativado")
     console.log("ta chegando rapaizzz")
+    
+    console.log(`A senha do cadastro é ${passwordCadastro} e o login do cadastro é de ${emailCadastro}, Ja`)
 })
 btnEntendi.addEventListener("click" , ()=>{
     alerta.classList.remove("ativado")
@@ -23,18 +25,19 @@ btnEntendi.addEventListener("click" , ()=>{
 })
 
 // Dados da Conta
-let passwordCadastro = document.getElementById("password").value;
-let emailCadastro  = document.getElementById("email").value;
-// Dados  Login
-let passwordLogin = document.getElementById("passwordLogin").value;
-let emailLogin = document.getElementById("emailLogin").value;
 function VerificarDados(){
+    let passwordCadastro = document.getElementById("password").value;
+    let emailCadastro  = document.getElementById("email").value;
+    // Dados  Login
+    let passwordLogin = document.getElementById("passwordLogin").value;
+    let emailLogin = document.getElementById("emailLogin").value;
     if(emailCadastro == emailLogin && passwordCadastro == passwordLogin){
         window.alert("acertou mizeravi")
         // console.log(emailCadastro + passwordCadastro + emailLogin + passwordLogin)
-        // location.href = "home.html"
+        location.href = "home.html"
+        console.log(`A senha do cadastro é ${passwordCadastro} e o login do cadastro é de ${emailCadastro}, Ja`)
     }
     else{
-        window.alert("Errou")
+        window.alert("Senha ou Login Incorretos")
     }
 }
